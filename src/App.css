@@ -23,36 +23,45 @@ body {
 .SidebarList .row {
   width: 100%;
   height: 60px;
-  list-style-type: none;
-  margin: 0;
   display: flex;
   flex-direction: row;
-  color: white;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  list-style-type: none;
+
+  color: white;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   cursor: pointer;
+  text-decoration: none;
 
   transition: all 0.05s ease-in;
   &:hover {
-    color: rgb(232, 213, 189);
+    color: #e8d5bd;
     background-color: #293846;
   }
-  &:active {
-    color: rgb(252, 242, 231);
-  }
+
 }
 
-.SidebarList #active {
-  background-color: #293846;
-}
-
-.row #icon {
+.row .icon {
   flex: 30%;
   display: grid;
   place-items: center;
 }
 
-.row #title {
+.row .title {
   flex: 70%;
+}
+
+.activeRow {
+  color: #e8d5bd;
+  background-color: #293846;
+}
+
+.activeRow .title {
+  color: #e8d5bd;
+}
+
+.activeRow .icon {
+  color: #e8d5bd;
 }
